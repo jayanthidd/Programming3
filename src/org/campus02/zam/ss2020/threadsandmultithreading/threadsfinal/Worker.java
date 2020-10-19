@@ -1,0 +1,28 @@
+package org.campus02.zam.ss2020.threadsandmultithreading.threadsfinal;
+
+import java.io.IOException;
+
+public abstract class Worker {
+    protected String name;
+    protected boolean shouldRun;
+
+    public Worker(String name) {
+        this.name = name;
+        this.shouldRun = true;
+    }
+
+    protected abstract void work() throws IOException;
+
+    protected void printStarted() {
+        System.out.println(name + " wurde gestartet");
+    }
+
+    protected void printStopped() {
+        System.out.println(name + " wurde gestoppt");
+    }
+
+    public void stopWorker() {
+        shouldRun = false;
+    }
+
+}

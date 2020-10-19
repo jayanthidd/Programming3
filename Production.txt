@@ -1,0 +1,2 @@
+Product{productName='Toothpaste', price=2.5, productCategory='Toiletries'}
+Product{productName='Shampoo', price=4.75, productCategory='Toiletries'}
